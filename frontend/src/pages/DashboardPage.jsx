@@ -98,7 +98,7 @@ export default function DashboardPage() {
           </div>
         ) : (
           <>
-            {/* Search Bar */}
+            {/* Search Bar */} 
             <div className="mb-8">
               <div className="max-w-md mx-auto">
                 <div className="relative">
