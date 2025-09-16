@@ -5,7 +5,6 @@ import UserDetailsPage from './pages/UserDetailsPage'
 import { UserProvider, useUsers } from './context/UserContext'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import ThemeProbe from './components/ThemeProbe'
 import './index.css'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
@@ -40,7 +39,6 @@ function AppInner() {
           theme={theme === 'dark' ? 'dark' : 'light'}
         />
       </div>
-      <ThemeProbe />
     </div>
   )
 }
