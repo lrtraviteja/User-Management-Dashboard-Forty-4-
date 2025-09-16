@@ -57,7 +57,7 @@ Example `.env`:
 PORT=3000
 DB_PATH=users.db
 NODE_ENV=development
-BASE_URL=https://your-backend-service.onrender.com
+BASE_URL=https://user-management-dashboard-forty-4-backend.onrender.com
 ```
 
 ## Installation & Setup
@@ -81,7 +81,7 @@ If you deploy this backend on Render:
 4. Add Environment Variables in the Render dashboard matching your `.env` (at minimum `PORT` and optionally `DB_PATH`). Render normally injects `PORT`, so you can omit or leave it.
 5. (Optional) Add `NODE_ENV=production`.
 
-After deployment, note the public URL (e.g. `https://your-backend-service.onrender.com`) and set it locally in `.env` as `BASE_URL` so the frontend (or API clients) can reference it consistently.
+After deployment, note the public URL (e.g. `https://user-management-dashboard-forty-4-backend.onrender.com`) and set it locally in `.env` as `BASE_URL` so the frontend (or API clients) can reference it consistently.
 
 Example:
 ```
@@ -234,13 +234,10 @@ Sanitization: Trims all string fields.
 - API root health check: `GET /` → `"User Management API is running."`
 
 ## Suggested Next Improvements
-1. Introduce centralized error handler & async wrapper.
-2. Add pagination & search to list endpoint.
-3. Add Jest + Supertest test suite.
-4. Add security hardening (helmet, CORS origin allowlist, rate limiting).
-5. Implement soft delete & timestamps.
-6. Provide OpenAPI spec.
-7. Containerize with Docker.
+1. Add pagination & search to list endpoint.
+2. Add security hardening (helmet, CORS origin allowlist, rate limiting).
+3. Implement soft delete & timestamps.
+4. Provide OpenAPI spec.
 
 ---
-Feel free to modify this README as the backend evolves.
+
