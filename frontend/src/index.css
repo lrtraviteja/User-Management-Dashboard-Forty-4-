@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+body {
+	@apply bg-white;
+}
+html.dark body {
+	@apply bg-gray-900;
+}
