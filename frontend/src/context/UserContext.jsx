@@ -7,13 +7,8 @@ export const UserProvider = ({ children }) => {
   const [users, setUsers] = useState([])
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
-  const [theme, setTheme] = useState(() => {
-    const stored = localStorage.getItem('theme')
-    if (stored === 'light' || stored === 'dark') return stored
-    // system preference as fallback
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark'
-    return 'light'
-  })
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light')
+    
 
   const refresh = async () => {
     setLoading(true)
@@ -32,15 +27,12 @@ export const UserProvider = ({ children }) => {
 
   // Persist theme
   useLayoutEffect(() => {
-    const root = document.documentElement
-    if (theme === 'dark') root.classList.add('dark')
-    else root.classList.remove('dark')
-    localStorage.setItem('theme', theme)
-    // debug log (can be removed later)
-    if (process.env.NODE_ENV !== 'production') {
-      // eslint-disable-next-line no-console
-      console.log('[Theme]', theme, 'html.classes=', root.className)
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
     }
+    localStorage.setItem("theme", theme);
   }, [theme])
 
   const addUser = async (data) => {
