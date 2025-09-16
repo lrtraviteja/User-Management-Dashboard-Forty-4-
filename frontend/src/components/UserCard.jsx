@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import { FiEdit, FiTrash2 } from 'react-icons/fi'
+import { FiEdit, FiTrash2 } from 'react-icons/fi' 
 
 export default function UserCard({ user, onEdit, onDelete }) {
   const navigate = useNavigate()
