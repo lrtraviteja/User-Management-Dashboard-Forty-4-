@@ -5,7 +5,8 @@ import { toast } from 'react-toastify'
 /**
  * UserForm supports create & edit for the existing backend schema only.
  * Backend fields: name, email, phone, street, city, zipcode, geo_lat, geo_lng
- */
+*/
+
 export default function UserForm({ mode = 'create', initialUser = null, onSuccess, onCancel }) {
   const isEdit = mode === 'edit'
   const { addUser, modifyUser } = useUsers()
