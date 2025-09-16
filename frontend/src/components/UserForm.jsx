@@ -93,6 +93,7 @@ export default function UserForm({ mode = 'create', initialUser = null, onSucces
             <input
               type="text"
               name="name"
+              placeholder="Ex: Alex Smith"
               value={formData.name}
               onChange={handleChange}
               required
@@ -107,6 +108,7 @@ export default function UserForm({ mode = 'create', initialUser = null, onSucces
             <input
               type="email"
               name="email"
+              placeholder="Ex: alex@domain.com"
               value={formData.email}
               onChange={handleChange}
               required
@@ -121,6 +123,7 @@ export default function UserForm({ mode = 'create', initialUser = null, onSucces
             <input
               type="tel"
               name="phone"
+              placeholder="Ex: 9876543210"
               value={formData.phone}
               onChange={handleChange}
               className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -134,6 +137,7 @@ export default function UserForm({ mode = 'create', initialUser = null, onSucces
             <input
               type="text"
               name="street"
+              placeholder="Ex: 123 Main Street"
               value={formData.street}
               onChange={handleChange}
               className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -147,6 +151,7 @@ export default function UserForm({ mode = 'create', initialUser = null, onSucces
             <input
               type="text"
               name="city"
+              placeholder="Ex: New Delhi"
               value={formData.city}
               onChange={handleChange}
               className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -160,6 +165,7 @@ export default function UserForm({ mode = 'create', initialUser = null, onSucces
             <input
               type="text"
               name="zipcode"
+              placeholder="Ex: 543210"
               value={formData.zipcode}
               onChange={handleChange}
               className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -173,6 +179,7 @@ export default function UserForm({ mode = 'create', initialUser = null, onSucces
             <input
               type="number"
               step="any"
+              placeholder="Ex: 14.1528"
               name="geo_lat"
               value={formData.geo_lat}
               onChange={handleChange}
@@ -187,6 +194,7 @@ export default function UserForm({ mode = 'create', initialUser = null, onSucces
             <input
               type="number"
               step="any"
+              placeholder="Ex: -8.2815"
               name="geo_lng"
               value={formData.geo_lng}
               onChange={handleChange}
