@@ -4,7 +4,6 @@ import DashboardPage from './pages/DashboardPage'
 import UserDetailsPage from './pages/UserDetailsPage'
 import { UserProvider, useUsers } from './context/UserContext'
 import Header from './components/Header'
-import Footer from './components/Footer'
 import './index.css'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
@@ -26,7 +25,6 @@ function AppInner() {
             <Route path="/users/:id" element={<UserDetailsPage />} />
           </Routes>
         </main>
-        <Footer />
         <ToastContainer
           position="top-right"
           autoClose={3000}
